@@ -1,6 +1,5 @@
 'use client'
 
-import CustomHeader from "@/components/CustomHeader/CustomHeader";
 import {NextUIProvider} from "@nextui-org/react";
 import React from "react";
 

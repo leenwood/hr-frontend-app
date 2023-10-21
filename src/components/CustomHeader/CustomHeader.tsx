@@ -1,16 +1,19 @@
 import style from './CustomHeader.module.css';
+import React from "react";
 import {Button, Link, Navbar, NavbarBrand, NavbarContent, NavbarItem} from "@nextui-org/react";
+import {AcmeLogo} from "@/components/CustomHeader/AcmeLogo";
 
 export default function CustomHeader() {
     return (<>
         <Navbar>
             <NavbarBrand>
+                <AcmeLogo />
                 <p className="font-bold text-inherit">ACME</p>
             </NavbarBrand>
             <NavbarContent className="hidden sm:flex gap-4" justify="center">
                 <NavbarItem>
-                    <Link color="foreground" href="#">
-                        Features
+                    <Link color="foreground" href="/documents">
+                        Documents
                     </Link>
                 </NavbarItem>
                 <NavbarItem isActive>
