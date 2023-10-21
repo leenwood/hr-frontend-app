@@ -5,14 +5,16 @@ import {AcmeLogo} from "@/components/CustomHeader/AcmeLogo";
 
 export default function CustomHeader() {
     return (<>
-        <Navbar>
+        <Navbar shouldHideOnScroll>
             <NavbarBrand>
-                <AcmeLogo />
-                <p className="font-bold text-inherit">ACME</p>
+                <Link href="/">
+                    <AcmeLogo/>
+                    <p className="font-bold text-inherit">ACME</p>
+                </Link>
             </NavbarBrand>
-            <NavbarContent className="hidden sm:flex gap-4" justify="center">
+            <NavbarContent className="sm:flex gap-4" justify="center">
                 <NavbarItem>
-                    <Link color="foreground" href="/documents">
+                    <Link color="foreground" href="/documents" aria-current="page">
                         Documents
                     </Link>
                 </NavbarItem>

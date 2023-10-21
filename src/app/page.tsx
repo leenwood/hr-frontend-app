@@ -4,6 +4,6 @@ import {Button} from "@nextui-org/react";
 
 export default function Home() {
     return (<>
-        <Button>Test</Button>
+        <div style={{height: "2000px"}}>Main page</div>
     </>)
 }

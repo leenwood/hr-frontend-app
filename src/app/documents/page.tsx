@@ -1,5 +1,5 @@
 export default function Documents() {
     return (<>
-        Page with documents
+        <div style={{height: "2000px"}}>documents</div>
     </>)
 }
